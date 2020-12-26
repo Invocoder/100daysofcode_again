@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int power(int x,int n){
+   // write your code here
+   if(n==0)
+   {
+       return 1;
+   }
+   int xm1=power(x,n-1);
+   int xn=x*xm1;
+
+}
+
+
+int main()
+{
+    int n,x; cin>>x>>n;
+    cout<<power(x,n);
+}
